@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title-->
+    <title>Calculator</title>
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="top-container">
+        <div class="time">12:12</div>
+        <div class="status">
+          <img src="./images/status.png" alt="status" />
+        </div>
+      </div>
+      <div class="display">0</div>
+      <div class="btn-container">
+        <button class="light-grey" data-action="clear">AC</button>
+        <button class="light-grey" data-action="pm">+/-</button>
+        <button class="light-grey" data-action="percent">%</button>
+        <button class="operator" data-action="division">÷</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator" data-action="multiplication">×</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator" data-action="substraction">−</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator" data-action="addition">+</button>
+
+        <button class="double">0</button>
+        <button data-action="decimal">.</button>
+        <button class="operator" data-action="equal">=</button>
+      </div>
+      <div class="bottom-container"></div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
