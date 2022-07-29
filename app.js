@@ -2,20 +2,6 @@ const calculator = document.querySelector(".calculator");
 const buttons = calculator.querySelector(".btn-container");
 const calculatorDisplay = document.querySelector(".display");
 
-const operate = (num1, operator, num2) => {
-  const firstNumber = parseFloat(num1);
-  const secondNumber = parseFloat(num2);
-  if (operator === "addition") {
-    return firstNumber + secondNumber;
-  } else if (operator === "substraction") {
-    return firstNumber - secondNumber;
-  } else if (operator === "multiplication") {
-    return firstNumber * secondNumber;
-  } else if (operator === "division") {
-    return firstNumber / secondNumber;
-  }
-};
-
 buttons.addEventListener("click", (e) => {
   if (e.target.matches("button")) {
     const key = e.target;
@@ -85,4 +71,17 @@ buttons.addEventListener("click", (e) => {
       calculator.dataset.previousKeyType = "operate";
     }
   }
+  const operate = (num1, operator, num2) => {
+    const firstNumber = parseFloat(num1);
+    const secondNumber = parseFloat(num2);
+    if (operator === "addition") {
+      return firstNumber + secondNumber;
+    } else if (operator === "substraction") {
+      return firstNumber - secondNumber;
+    } else if (operator === "multiplication") {
+      return firstNumber * secondNumber;
+    } else if (operator === "division") {
+      return firstNumber / secondNumber;
+    }
+  };
 });
